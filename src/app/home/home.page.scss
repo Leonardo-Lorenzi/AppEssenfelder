@@ -1,11 +1,30 @@
 #container {
-  text-align: center;
-
+  //text-align: center;
+  //background-color: rgb(129, 94, 62);
+  //background-image: url("../../assets/icon/piano1.jpg");
+  height: 100%;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+ion-title {
+  text-align: center;
+}
+
+#container2 {
+  //text-align: center;
+  background-color: rgba(228, 226, 226, 0.863);
+  border-radius: 10px;
+  width: 80.8%;
+  //height: 80%;
+  position: relative;
+  overflow:hidden;
+  left: 10%;
+  right: 0;
+  top: 10%;
 }
 
 #container strong {
@@ -17,11 +36,38 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #000000;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+  color: #815d3c;
+}
+
+#teste {
+  color: #815d3c;
+}
+
+.linha {
+  border-bottom: 1px solid #000;
+  margin-bottom: 8%;
+}
+
+#login {
+  margin-top: 30%;
+  margin-bottom: 15%;
+}
+
+#cad {
+  margin-top: 10%;
+}
+
+#ou {
+  text-align: center;
+}
+
+#esq_senha {
+  margin-top: 7%;
 }

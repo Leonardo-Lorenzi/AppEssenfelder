@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row id="subtitulo">
+      <ion-col size="0.5"></ion-col>
+      <ion-col size="11.5">
+        <ion-label color="dark">Endereço</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-item color="secondary">
+          <ion-label position="floating">Logradouro</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="3">
+        <ion-item color="secondary">
+          <ion-label position="floating">Nº</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="7">
+        <ion-item color="secondary">
+          <ion-label position="floating">Bairro</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-item color="secondary">
+          <ion-label position="floating">Complemento</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="7">
+        <ion-item color="secondary">
+          <ion-label position="floating">Cidade</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item color="secondary">
+          <ion-label position="floating">UF</ion-label>
+          <ion-select inputmode="text" interface="alert">
+            <ion-select-option value="rondonia">RO</ion-select-option>
+            <ion-select-option value="acre">AC</ion-select-option>
+            <ion-select-option value="amazonas">AM</ion-select-option>
+            <ion-select-option value="roraima">RR</ion-select-option>
+            <ion-select-option value="para">PA</ion-select-option>
+            <ion-select-option value="amapa">AP</ion-select-option>
+            <ion-select-option value="tocantins">TO</ion-select-option>
+            <ion-select-option value="maranhao">MA</ion-select-option>
+            <ion-select-option value="piaui">PI</ion-select-option>
+            <ion-select-option value="ceara">CE</ion-select-option>
+            <ion-select-option value="rio grande do norte">RN</ion-select-option>
+            <ion-select-option value="paraiba">PB</ion-select-option>
+            <ion-select-option value="pernambuco">PE</ion-select-option>
+            <ion-select-option value="alagoas">AL</ion-select-option>
+            <ion-select-option value="sergipe">SE</ion-select-option>
+            <ion-select-option value="bahia">BA</ion-select-option>
+            <ion-select-option value="minas gerais">MG</ion-select-option>
+            <ion-select-option value="espirito santo">ES</ion-select-option>
+            <ion-select-option value="rio de janeiro">RJ</ion-select-option>
+            <ion-select-option value="sao paulo">SP</ion-select-option>
+            <ion-select-option value="parana">PR</ion-select-option>
+            <ion-select-option value="santa catarina">SC</ion-select-option>
+            <ion-select-option value="rio grande do sul">RS</ion-select-option>
+            <ion-select-option value="mato grosso do sul">MS</ion-select-option>
+            <ion-select-option value="mato grosso">MT</ion-select-option>
+            <ion-select-option value="goias">GO</ion-select-option>
+            <ion-select-option value="distrito federal">DF</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-item color="secondary">
+          <ion-label position="floating">CEP</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button [routerLink]="['/cadastro-card']" color="warning" size="default" expand="full">Prosseguir</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-segment value="adress" color="warning">
+    <ion-segment-button value="user" disabled="disabled">
+      <ion-icon name="person"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="adress">
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="card" disabled="disabled">
+      <ion-icon name="card"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-content>
