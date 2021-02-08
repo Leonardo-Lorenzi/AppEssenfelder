@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Teclado virtual</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="do()" color="warning" size="default" expand="full">DÓ</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="re()" color="warning" size="default" expand="full">RÉ</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="mi()" color="warning" size="default" expand="full">MI</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="fa()" color="warning" size="default" expand="full">FÁ</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="sol()" color="warning" size="default" expand="full">SOL</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="la()" color="warning" size="default" expand="full">LÁ</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row id="cad">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-button (click)="doOctave()" color="warning" size="default" expand="full">DÓ OCTAVE</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

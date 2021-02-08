@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'cadastro-adress',
     loadChildren: () => import('./cadastro-adress/cadastro-adress.module').then( m => m.CadastroAdressPageModule)
   },
+  {
+    path: 'teclado-virtual',
+    loadChildren: () => import('./teclado-virtual/teclado-virtual.module').then( m => m.TecladoVirtualPageModule)
+  },
 ];
 
 @NgModule({
