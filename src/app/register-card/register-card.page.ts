@@ -5,11 +5,11 @@ import { PayPal, PayPalPayment, PayPalConfiguration, PayPalPaymentDetails } from
 
 
 @Component({
-  selector: 'app-cadastro-card',
-  templateUrl: './cadastro-card.page.html',
-  styleUrls: ['./cadastro-card.page.scss'],
+  selector: 'app-register-card',
+  templateUrl: './register-card.page.html',
+  styleUrls: ['./register-card.page.scss'],
 })
-export class CadastroCardPage implements OnInit {
+export class RegisterCardPage implements OnInit {
 
   constructor(private payPal: PayPal) { }
 

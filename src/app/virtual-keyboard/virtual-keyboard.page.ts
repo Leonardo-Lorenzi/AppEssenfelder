@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { NativeAudio } from '@ionic-native/native-audio/ngx';
 
 @Component({
-  selector: 'app-teclado-virtual',
-  templateUrl: './teclado-virtual.page.html',
-  styleUrls: ['./teclado-virtual.page.scss'],
+  selector: 'app-virtual-keyboard',
+  templateUrl: './virtual-keyboard.page.html',
+  styleUrls: ['./virtual-keyboard.page.scss'],
 })
-export class TecladoVirtualPage implements OnInit {
+export class VirtualKeyboardPage implements OnInit {
 
   constructor(private nativeAudio: NativeAudio) { }
 

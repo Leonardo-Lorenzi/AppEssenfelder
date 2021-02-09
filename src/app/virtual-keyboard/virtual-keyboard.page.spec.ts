@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CadastroAdressPage } from './cadastro-adress.page';
+import { VirtualKeyboardPage } from './virtual-keyboard.page';
 
-describe('CadastroAdressPage', () => {
-  let component: CadastroAdressPage;
-  let fixture: ComponentFixture<CadastroAdressPage>;
+describe('VirtualKeyboardPage', () => {
+  let component: VirtualKeyboardPage;
+  let fixture: ComponentFixture<VirtualKeyboardPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CadastroAdressPage ],
+      declarations: [ VirtualKeyboardPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CadastroAdressPage);
+    fixture = TestBed.createComponent(VirtualKeyboardPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

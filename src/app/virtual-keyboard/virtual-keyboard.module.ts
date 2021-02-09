@@ -6,20 +6,20 @@ import { IonicModule } from '@ionic/angular';
 
 import { NativeAudio } from '@ionic-native/native-audio/ngx';
 
-import { TecladoVirtualPageRoutingModule } from './teclado-virtual-routing.module';
+import { VirtualKeyboardPageRoutingModule } from './virtual-keyboard-routing.module';
 
-import { TecladoVirtualPage } from './teclado-virtual.page';
+import { VirtualKeyboardPage } from './virtual-keyboard.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TecladoVirtualPageRoutingModule
+    VirtualKeyboardPageRoutingModule
   ],
-  declarations: [TecladoVirtualPage],
+  declarations: [VirtualKeyboardPage],
   providers: [
     NativeAudio
   ]
 })
-export class TecladoVirtualPageModule {}
+export class VirtualKeyboardPageModule {}

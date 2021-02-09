@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CadastroUserPage } from './cadastro-user.page';
+import { VirtualKeyboardPage } from './virtual-keyboard.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: CadastroUserPage
+    component: VirtualKeyboardPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class CadastroUserPageRoutingModule {}
+export class VirtualKeyboardPageRoutingModule {}

@@ -12,20 +12,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'cadastro-user',
-    loadChildren: () => import('./cadastro-user/cadastro-user.module').then( m => m.CadastroUserPageModule)
+    path: 'register-user',
+    loadChildren: () => import('./register-user/register-user.module').then( m => m.RegisterUserPageModule)
   },
   {
-    path: 'cadastro-card',
-    loadChildren: () => import('./cadastro-card/cadastro-card.module').then( m => m.CadastroCardPageModule)
+    path: 'register-card',
+    loadChildren: () => import('./register-card/register-card.module').then( m => m.RegisterCardPageModule)
   },
   {
-    path: 'cadastro-adress',
-    loadChildren: () => import('./cadastro-adress/cadastro-adress.module').then( m => m.CadastroAdressPageModule)
+    path: 'register-address',
+    loadChildren: () => import('./register-address/register-address.module').then( m => m.RegisterAddressPageModule)
   },
   {
-    path: 'teclado-virtual',
-    loadChildren: () => import('./teclado-virtual/teclado-virtual.module').then( m => m.TecladoVirtualPageModule)
+    path: 'virtual-keyboard',
+    loadChildren: () => import('./virtual-keyboard/virtual-keyboard.module').then( m => m.VirtualKeyboardPageModule)
   },
 ];
 

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CadastroCardPageRoutingModule } from './cadastro-card-routing.module';
+import { RegisterCardPageRoutingModule } from './register-card-routing.module';
 
-import { CadastroCardPage } from './cadastro-card.page';
+import { RegisterCardPage } from './register-card.page';
 
 import { PayPal } from '@ionic-native/paypal/ngx';
 
@@ -15,11 +15,11 @@ import { PayPal } from '@ionic-native/paypal/ngx';
     CommonModule,
     FormsModule,
     IonicModule,
-    CadastroCardPageRoutingModule
+    RegisterCardPageRoutingModule
   ],
-  declarations: [CadastroCardPage],
+  declarations: [RegisterCardPage],
   providers: [
     PayPal
   ]
 })
-export class CadastroCardPageModule {}
+export class RegisterCardPageModule {}

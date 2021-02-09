@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CadastroAdressPageRoutingModule } from './cadastro-adress-routing.module';
+import { RegisterAddressPageRoutingModule } from './register-address-routing.module';
 
-import { CadastroAdressPage } from './cadastro-adress.page';
+import { RegisterAddressPage } from './register-address.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CadastroAdressPageRoutingModule
+    RegisterAddressPageRoutingModule
   ],
-  declarations: [CadastroAdressPage]
+  declarations: [RegisterAddressPage]
 })
-export class CadastroAdressPageModule {}
+export class RegisterAddressPageModule {}
