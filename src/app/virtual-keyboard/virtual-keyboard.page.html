@@ -7,56 +7,81 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-grid>
-    <ion-row id="cad">
+<ion-content color="success">
+  <!--<ion-grid>
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="do()" color="warning" size="default" expand="full">DÓ</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
-    <ion-row id="cad">
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="re()" color="warning" size="default" expand="full">RÉ</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
-    <ion-row id="cad">
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="mi()" color="warning" size="default" expand="full">MI</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
-    <ion-row id="cad">
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="fa()" color="warning" size="default" expand="full">FÁ</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
-    <ion-row id="cad">
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="sol()" color="warning" size="default" expand="full">SOL</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
-    <ion-row id="cad">
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="la()" color="warning" size="default" expand="full">LÁ</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
-    <ion-row id="cad">
+    <ion-row>
       <ion-col size="1"></ion-col>
       <ion-col size="10">
         <ion-button (click)="doOctave()" color="warning" size="default" expand="full">DÓ OCTAVE</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
+  </ion-grid>-->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">
+        <ion-text color="dark" id="text_note">
+          <p class="anime_note">{{note}}</p>
+        </ion-text>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
   </ion-grid>
+
+  <div id="position_keyboard">
+    <img src="../../assets/icon/keyboard.png" alt="Keyboard" usemap="#keyboard">
+    <map name="keyboard">
+      <area shape="rect" coords="0,0,49,200" (click)="do()" alt="DÓ" />
+      <area shape="rect" coords="50,0,99,200" (click)="re()" alt="RÉ" />
+      <area shape="rect" coords="100,0,149,200" (click)="mi()" alt="MI" />
+      <area shape="rect" coords="150,0,199,200" (click)="fa()" alt="FÁ" />
+      <area shape="rect" coords="200,0,249,200" (click)="sol()" alt="SOL" />
+      <area shape="rect" coords="250,0,299,200" (click)="la()" alt="LÁ" />
+      <area shape="rect" coords="300,0,350,200" (click)="doOctave()" alt="DÓOCTAVE" />
+    </map>
+  </div>
 </ion-content>

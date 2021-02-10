@@ -1,0 +1,19 @@
+#position_keyboard {
+    position: absolute;
+    bottom: 0;
+    margin-left: 1.5%;
+}
+
+#text_note {
+    font-size: 50px;
+    text-align: center;
+}
+
+.color_animation_end {
+    color: transparent;
+}
+
+.anime_note {
+    --animate-duration: 0.5s;
+}
+
