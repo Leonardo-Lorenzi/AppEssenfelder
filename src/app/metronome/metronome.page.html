@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Metronome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="0"></ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-range min="40" max="218" step="1" value="124" color="warning" pin="true" (ionChange)="rangeChange($event)">
+            <ion-icon size="small" slot="start" name="play-circle-outline"></ion-icon>
+            <ion-icon slot="end" name="play-forward-circle-outline"></ion-icon>
+          </ion-range>
+        </ion-item>
+      </ion-col>
+      <ion-col size="0"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+
+  <div id="position_player">
+    <ion-fab slot="fixed">
+      <ion-fab-button color="warning" (click)="startMetronome()">
+        <ion-icon name="play"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab>
+      <ion-fab-button color="light" (click)="pauseMetronome()">
+        <ion-icon name="pause"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>

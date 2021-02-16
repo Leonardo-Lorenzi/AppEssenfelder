@@ -1,0 +1,39 @@
+div {
+    position: relative;
+    float: left;
+    width: 42%;
+    margin: 3%;
+    height: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#keyboard {
+    background-color: #a3823c;
+    position: relative;
+}
+
+#keyboard:hover {
+    background-color: #a3823c;
+}
+#keyboard:active {
+    background-color: #a3823c;
+}
+#keyboard:checked {
+    background-color: #a3823c;
+    outline: none;
+}
+
+#metronome {
+    background-color: #a3823c;
+    position: relative;
+}
+
+#curso {
+    background-color: #a3823c;
+    position: relative;
+}
+
+.text_div {
+    font-weight: bold;
+}

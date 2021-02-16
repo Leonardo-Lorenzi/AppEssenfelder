@@ -28,8 +28,10 @@
     "animate.css": "^4.1.1",
     "cordova-android": "9.0.0",
     "cordova-browser": "6.0.0",
+    "howler": "^2.2.1",
     "node": "^15.4.0",
     "rxjs": "~6.5.5",
+    "spinkit": "^2.0.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
