@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'metronome',
     loadChildren: () => import('./metronome/metronome.module').then( m => m.MetronomePageModule)
   },
+  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
+  },
 ];
 
 @NgModule({

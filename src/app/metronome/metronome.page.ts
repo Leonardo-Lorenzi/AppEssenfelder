@@ -26,9 +26,9 @@ export class MetronomePage implements OnInit {
   }
 
   startMetronome() {
-    this.nativeAudio.play('metronome', () => console.log("start"));
-    this.nativeAudio.loop('metronome');
-    /*let x = setTimeout (function() {
+    //this.nativeAudio.play('metronome', () => console.log("start"));
+    //this.nativeAudio.loop('metronome');
+    let x = setTimeout (function() {
       if (this.player) {
         this.player.stop();
       }
@@ -41,11 +41,11 @@ export class MetronomePage implements OnInit {
           this.isPlaying = true;
         },
         onend: () => {
-
+         
         }
       });
       //this.player.play();
-    }, 0)*/
+    }, 0)
     
   }
 

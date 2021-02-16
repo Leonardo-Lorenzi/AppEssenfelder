@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NativeAudio } from '@ionic-native/native-audio/ngx';
+
+import { instrument } from 'soundfont-player';
+
+import { Howl, Howler } from 'howler';
 import { createAnimation, Animation } from '@ionic/core';
 
 @Component({
@@ -9,6 +13,8 @@ import { createAnimation, Animation } from '@ionic/core';
   styleUrls: ['./virtual-keyboard.page.scss'],
 })
 export class VirtualKeyboardPage implements OnInit {
+
+  player: Howl = null;
 
   constructor(private nativeAudio: NativeAudio) { }
 
@@ -26,7 +32,14 @@ export class VirtualKeyboardPage implements OnInit {
   note: String;
 
   do() {
-    this.nativeAudio.play('do', () => console.log("Dó"))
+    //this.nativeAudio.play('do', () => console.log("Dó"))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('C4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/do.wav'],
+    })
+    this.player.play();
     this.note="Dó";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
@@ -39,7 +52,14 @@ export class VirtualKeyboardPage implements OnInit {
   }
 
   re() {
-    this.nativeAudio.play('re', () => console.log('Ré'))
+    //this.nativeAudio.play('re', () => console.log('Ré'))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('D4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/re.wav'],
+    })
+    this.player.play();
     this.note="Ré";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
@@ -52,7 +72,14 @@ export class VirtualKeyboardPage implements OnInit {
   }
 
   mi() {
-    this.nativeAudio.play('mi', () => console.log('Mi'))
+    //this.nativeAudio.play('mi', () => console.log('Mi'))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('E4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/mi.wav'],
+    })
+    this.player.play();
     this.note="Mi";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
@@ -65,7 +92,14 @@ export class VirtualKeyboardPage implements OnInit {
   }
 
   fa() {
-    this.nativeAudio.play('fa', () => console.log('Fá'))
+    //this.nativeAudio.play('fa', () => console.log('Fá'))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('F4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/fa.wav'],
+    })
+    this.player.play();
     this.note="Fá";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
@@ -78,7 +112,14 @@ export class VirtualKeyboardPage implements OnInit {
   }
 
   sol() {
-    this.nativeAudio.play('sol', () => console.log('Sol'))
+    //this.nativeAudio.play('sol', () => console.log('Sol'))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('G4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/sol.wav'],
+    })
+    this.player.play();
     this.note="Sol";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
@@ -91,7 +132,14 @@ export class VirtualKeyboardPage implements OnInit {
   }
 
   la() {
-    this.nativeAudio.play('la', () => console.log('Lá'))
+    //this.nativeAudio.play('la', () => console.log('Lá'))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('A4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/la.wav'],
+    })
+    this.player.play();
     this.note="Lá";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
@@ -104,7 +152,14 @@ export class VirtualKeyboardPage implements OnInit {
   }
 
   si() {
-    this.nativeAudio.play('si', () => console.log('Si'))
+    //this.nativeAudio.play('si', () => console.log('Si'))
+    /*instrument( new AudioContext(), "electric_piano_1").then(function (electric_piano_1) {
+      electric_piano_1.play('B4')
+    })*/
+    this.player = new Howl ({
+      src: ['../../assets/song/si.wav'],
+    })
+    this.player.play();
     this.note="Si";
     const element = document.querySelector('.anime_note');
     element.classList.remove('color_animation_end');
